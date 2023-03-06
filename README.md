@@ -9,12 +9,9 @@ You can click the Preview link to take a look at your changes.
 --->
 
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=satyaprakashksingh)](https://github.com/anuraghazra/github-readme-stats)
 
 
-
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=satyaprakashksingh&count_private=true)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=satyaprakashksingh&count_private=true&show_icons=true&theme=radical)
 
 
 
