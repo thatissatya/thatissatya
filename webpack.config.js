@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.[jt]sx?$/,
+                test: /\.(jsx|js)$/,
                 include: path.resolve(__dirname, 'src'),
                 exclude: path.resolve(__dirname, 'node_modules'),
                 use: {
@@ -19,7 +19,14 @@ module.exports = {
                     options: {
                         presets: ["@babel/preset-env", "@babel/preset-react"],
                     }
-                }
+                },
+                resolve: {
+                    extensions: ["", ".js", ".jsx", ".es6"]
+                },
+            },
+            {
+                test: /\.css$/,
+                loader: 'css-loader'
             }
         ]
     },

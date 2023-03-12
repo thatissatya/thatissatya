@@ -1,8 +1,11 @@
 import React from 'react'
-
+import './App.css'
+import {Home} from './pages/Home/Home'
 const App = () => {
   return (
-    <div>Portfolio</div>
+    <div className='ui-app-view'>
+        <Home/>
+    </div>
   )
 }
 
