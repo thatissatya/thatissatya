@@ -1,5 +1,5 @@
 .navbar {
-    background-color: var(--BG-COLOR-1);
+    background-color: var(--BG-COLOR);
     display: flex;
     justify-content: space-between;
     align-items: center;

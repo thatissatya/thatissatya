@@ -11,38 +11,37 @@ const Hero = () => {
         <div className="hero" id="home">
             <div className="content">
                 <div className="content-div">
-                    <p className="salutation"> Hello, I'm</p>
-                    <h1>Aryan Singh</h1>
-                    <p className="description">Web Developer</p>
+                    <h1 className="salutation">Hi, <span class="wave">👋</span></h1>
+                    <p className="description">I am Satya Prakash</p>
                     <p className="about">
-                        I am Aryan Singh and I am a Front End Web Developer. I am current
-                        persuing my Bachelors in Computer Science and Engineering from MNIT
-                        Jaipur, Rajasthan.
+                    A full stack developer with a vision to build easy-to-use and 
+                    easy-to-maintain applications. I love challenging and complex tasks. 
+                    Always keen to meet new people, learn from them, and help them to achieve common goals.
                     </p>
                     <div className="socials">
                         <a
-                            href="https://twitter.com/ssaryans597"
+                            href="https://twitter.com/ksatyasingh"
                             target="_blank"
                             className="social"
                         >
                             <img src={logo_twitter} alt="Twitter" />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/ssaryans159"
+                            href="https://www.linkedin.com/in/satyaprakashksingh"
                             target="_blank"
                             className="social"
                         >
                             <img src={logo_linkedin} alt="Linkedin" />
                         </a>
                         <a
-                            href="https://github.com/aryanas159"
+                            href="https://github.com/satyaprakashksingh"
                             target="_blank"
                             className="social"
                         >
                             <img src={logo_github} alt="Github" />
                         </a>
                         <a
-                            href="https://www.instagram.com/ssaryans/?"
+                            href="https://www.instagram.com/satyaprakashksingh/?"
                             target="_blank"
                             className="social"
                         >

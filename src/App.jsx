@@ -1,11 +1,16 @@
-import { Home } from './Home/Home'
-import './app.style.css'
-
-const  App = () => {
-    return (
-        <div className="App">
-        </div>
-    )
+import { useState } from 'react'
+import './App.css'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Hero from './components/Hero/Hero.jsx'
+import Skills from './components/Skills/Skills.jsx'
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <Skills /> 
+    </div>
+  )
 }
 
 export default App
