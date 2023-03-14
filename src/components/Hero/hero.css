@@ -103,10 +103,10 @@
 	margin-top: 60px;
 	animation: bounce-in-top 1s;
 }
-.social img {
+.social-media img {
 	width: 30px;
 }
-.social {
+.social-media {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,10 +116,10 @@
 	transition: 0.5s;
 	box-shadow: 0px 0px 15px var(--BLUE-TEXT-LIGHT);
 }
-.social:nth-child(3) {
+.social-media:nth-child(3) {
 	background-color: hsla(0, 0%, 100%, 0.841);
 }
-.social:hover {
+.social-media:hover {
 	transform: translateY(-50%);
 	box-shadow: 0px 0px 30px #fff;
 	border-color: #fff;
@@ -131,16 +131,12 @@
 		row-gap: 60px;
 		width: 100%;
 	}
-	.social:hover {
+	.social-media:hover {
 		transform: none;
 	}
 	.content {
 		padding-left: 0px;
 		flex: none;
-	}
-	.content .about {
-		max-width: 300px;
-		font-size: 0.8rem;
 	}
 	.image {
 		flex: none;
