@@ -10,7 +10,7 @@ export const socialMedia = [
         alt: 'Github',
         type: 'social-media',
         target: '_blank',
-        iconUrl: '/assets/github.png',
+        iconUrl: './assets/github.png',
         profileUrl: 'https://github.com/satyaprakashksingh'
     },
     {
@@ -19,7 +19,7 @@ export const socialMedia = [
         alt: 'LinkedIn',
         type: 'social-media',
         target: '_blank',
-        iconUrl: '/assets/linkedin.png',
+        iconUrl: './assets/linkedin.png',
         profileUrl: 'https://www.linkedin.com/in/satyaprakashksingh'
     },
     {
@@ -28,7 +28,7 @@ export const socialMedia = [
         alt: 'Twitter',
         type: 'social-media',
         target: '_blank',
-        iconUrl: '/assets/twitter.png',
+        iconUrl: './assets/twitter.png',
         profileUrl: 'https://twitter.com/ksatyasingh'
     },
     {
@@ -37,7 +37,7 @@ export const socialMedia = [
         alt: 'Instagram',
         type: 'social-media',
         target: '_blank',
-        iconUrl: '/assets/instagram.png',
+        iconUrl: './assets/instagram.png',
         profileUrl: 'https://www.instagram.com/satyaprakashksingh/?'
     },
 ]
@@ -59,41 +59,41 @@ export const domain = [
     {
         id: 'html',
         name: 'HTML',
-        url: '/assets/html.png'
+        url: './assets/html.png'
     },
     {
         id: 'css',
         name: 'CSS',
-        url:'/assets/css.png'
+        url:'./assets/css.png'
     },
     {
         id: 'javascript',
         name: 'JavaScript',
-        url: '/assets/javascript.png'
+        url: './assets/javascript.png'
     },
     {
         id: 'react',
         name: 'ReactJs',
-        url: '/assets/react.png'
+        url: './assets/react.png'
     },
     {
         id: 'node',
         name: 'NodeJs',
-        url: '/assets/node.png'
+        url: './assets/node.png'
     },
     {
         id: 'git',
         name: 'Git',
-        url: '/assets/git.png'
+        url: './assets/git.png'
     },
     {
         id: 'github',
         name: 'Github',
-        url: '/assets/github.png'
+        url: './assets/github.png'
     },
     {
         id: 'cpp',
         name: 'C++',
-        url: '/assets/cpp.png'
+        url: './assets/cpp.png'
     }
 ]
