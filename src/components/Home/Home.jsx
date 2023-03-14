@@ -1,54 +1,39 @@
-import React, { useState } from 'react'
-import { FiAlignRight } from "react-icons/fi";
+import React, {useState} from 'react'
 import { Card } from '../Card/Card';
-import { Navigation, aboutMe, intro, socialMedia, mySkills, domain  } from "../data/common";
+import './home.css'
+import { Navigation, aboutMe, intro, socialMedia, mySkills, domain } from "../data/common";
 const Navbar = () => {
-    const [toggleMenu, setToggleMenu] = useState(false)
-
+    const [section, setSection] = useState(null)
     return (<div className="navbar">
-        <div className="links">
-            <div>
-                {
-                    Navigation.map(navigator => <a href={navigator.url} className={navigator.type}>{navigator.name}</a>)
-                }
-            </div>
+        <div className="navbar-menu">
+            {
+                Navigation.map(navigator => section === navigator.name ? null : <a href={navigator.url} className={navigator.type} onClick={()=> setSection(navigator.name)} key={navigator.id}>{navigator.name}</a>)
+            }
         </div>
-        <div className="toggle-links" onClick={() => { setToggleMenu(prev => !prev) }}>
-            <FiAlignRight className="hamburger-icon" />
-        </div>
-        {toggleMenu
-            ?
-            <div className="toggle-menu">
-                <Links />
-            </div>
-            :
-            null}
     </div>)
 }
 const MainContent = () => {
-    return (<div className="hero" id="home">
+    return (<div className="main-content" id="home">
         <div className="content">
-            <div className="content-div">
-                <h1 className="salutation">Hi, <span className='wave'>👋</span></h1>
-                <p className="description">{intro}</p>
-                <p className="about">{aboutMe}</p>
-                <div className="socials">
-                    {
-                        socialMedia.map(media => <a
-                            href={media.profileUrl}
-                            target={media.target}
-                            className={media.type}
-                        >
-                            <img src={media.iconUrl} alt={media.alt} />
-                        </a>)
-                    }
-                </div>
+            <div className="salutation">Hi, <span className='wave'>👋</span></div>
+            <div className="description">{intro}</div>
+            <div className="about">{aboutMe}</div>
+            <div className="socials">
+                {
+                    socialMedia.map(media => <a
+                        href={media.profileUrl}
+                        target={media.target}
+                        className={media.type}
+                        key={media.id}
+                    >
+                        <img src={media.iconUrl} alt={media.alt} />
+                    </a>)
+                }
             </div>
         </div>
-        <div className="image">
-            <div className="profile-img-div">
-                <div className="lines"></div>
-                <img src='/assets/profile.jpg' alt="profile" className="profile-img" />
+        <div className="profile-picture-container">
+            <div className="profile-picture">
+                <img src='/assets/profile.jpg' alt="profile-picture" className="profile-photo" />
             </div>
             <div className="polygons">
                 <img src='/assets/polygon-scatter.svg' />
@@ -59,8 +44,8 @@ const MainContent = () => {
 const Skills = () => {
     return (
         <div className="skills" id="skills">
-            <h1>{mySkills}</h1>
-            <div className="container">
+            <div className="skills-title">{mySkills}</div>
+            <div className="skills-container">
                 {
                     domain.map(((item) => <Card {...item} />))
                 }
@@ -71,13 +56,9 @@ const Skills = () => {
 const Home = () => {
     return (
         <div className='ui-home'>
-            <div className='ui-home-navbar'>
-                <Navbar />
-            </div>
-            <div className='ui-home-body'>
-                <div className='ui-home-body-main'><MainContent/></div>
-                <div className='ui-home-body-skills'><Skills/></div>
-            </div>
+            <Navbar />
+            <MainContent />
+            <Skills />
         </div>
     )
 }

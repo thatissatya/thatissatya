@@ -1,7 +1,7 @@
 export const aboutMe = "  A full stack developer with a vision to build easy-to-use and easy - to - maintain applications.I love challenging and complex tasks. Always keen to meet new people, learn from them, and help them to achieve common goals."
 export const intro = "I am Satya Prakash";
 export const hello = "Hi, <span class='wave'>👋</span>";
-export const mySkills = "My Skills"
+export const mySkills = "Skills"
 
 export const socialMedia = [
     {
@@ -46,13 +46,13 @@ export const Navigation = [
         id: 'home',
         name: 'Home',
         url: '#home',
-        type: 'link'
+        type: 'navbar-link'
     },
     {
         id: 'skills',
         name: 'Skills',
         url: '#skills',
-        type: 'link'
+        type: 'navbar-link'
     }
 ]
 export const domain = [
