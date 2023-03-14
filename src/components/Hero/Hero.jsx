@@ -1,13 +1,12 @@
 import React from "react";
 import "./hero.css";
-import { socialMedia } from "../data/socialMedia";
-import { aboutMe, intro } from "../data/common";
+import { aboutMe, intro, socialMedia } from "../data/common";
 const Hero = () => {
     return (
         <div className="hero" id="home">
             <div className="content">
                 <div className="content-div">
-                    <h1 className="salutation">Hi, <span class='wave'>👋</span></h1>
+                    <h1 className="salutation">Hi, <span className='wave'>👋</span></h1>
                     <p className="description">{intro}</p>
                     <p className="about">{aboutMe}</p>
                     <div className="socials">

@@ -1,22 +1,17 @@
 import React from "react";
 import "./navbar.css";
 import { FiAlignRight } from "react-icons/fi";
-
+import { Navigation } from "../data/common";
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = React.useState(false)
     return (
         <div className="navbar">
-            <div className="title">
-            </div>
             <div className="links">
-                <div>
-                    <a href="#home" className="link">
-                        Home
-                    </a>
-                    <a href="#skills" className="link">
-                        Skills
-                    </a>
-                </div>
+            <div>
+            {
+                Navigation.map(navigator=> <a href={navigator.url} className={navigator.type}>{navigator.name}</a>)
+            }
+            </div>
             </div>
             <div className="toggle-links" onClick={() => { setToggleMenu(prev => !prev) }}>
                 <FiAlignRight className="hamburger-icon" />
